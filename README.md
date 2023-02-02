@@ -1,6 +1,6 @@
 # <b >URL_Shortener</b>
 
-<img src = "image.jpg" height = 500 px><br><br>
+<img src = "image.jpg" height = 375px  ><br><br>
 
 # For Contributors 🧑‍💼
 
