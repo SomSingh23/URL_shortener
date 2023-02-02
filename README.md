@@ -2,8 +2,7 @@
 
 <img src = "image.jpg" height = 375px  ><br><br>
 
-# For Contributors 🧑‍💼
+# For Contributors 🧑‍💼 :
+### If you are interested in this project ❤️
 
-## If you are interested in this project ❤️
-
-## feel free to send your <b>`PR`</b>
+### feel free to send your <b>`PR`</b>
