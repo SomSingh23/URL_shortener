@@ -38,6 +38,7 @@ h1 {
   border-radius: 4px;
   text-decoration: none;
   margin-right: 3px;
+  margin-left: 10px;
   background-color: #746b4977;
   color: #b5a773;
   border: 1px solid rgb(193, 133, 23);
@@ -60,7 +61,6 @@ h1 {
   align-items: center;
 }
 #form h3 {
-  margin-right: 10px;
   font-size: 25x;
 }
 .smain3 {
