@@ -59,6 +59,12 @@ h1 {
   justify-content: center;
   align-items: center;
 }
-h3 {
-  margin-left: 5px;
+#form h3 {
+  margin-right: 10px;
+  font-size: 25x;
+}
+.smain3 {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
 }
