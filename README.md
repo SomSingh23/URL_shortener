@@ -1,6 +1,6 @@
 # <b >URL_Shortener</b>
 
-<img src = "https://i.postimg.cc/Dyg546bt/image.jpg" height = 375px  ><br><br>
+<img src = "https://gadgetsbeat.com/wp-content/uploads/2022/04/URL-Shortener-Meaning-Benefits-When-To-Use.jpg" height=380px ><br><br>
 
 # For Contributors 🧑‍💼 :
 
