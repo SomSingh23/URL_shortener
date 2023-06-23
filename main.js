@@ -10,7 +10,7 @@ let call_api = async (token) => {
     let _link1 = document.querySelector("#link1");
     let _link2 = document.querySelector("#link2");
     let _link3 = document.querySelector("#link3");
-    main3.style.border = "1px solid #746b49";
+    main3.style.border = "1px solid #4f4831";
     _link1.textContent = "";
     _link2.textContent = "";
     _link3.textContent = "";

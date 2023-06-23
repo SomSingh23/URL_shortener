@@ -9,9 +9,15 @@ body {
   margin-right: auto;
 }
 h1 {
-  font-weight: 500;
+  color: rgb(202, 157, 22);
+  font-weight: 100;
   font-size: 60px;
   font-family: "Tilt Prism", cursive;
+  transition: all 2s;
+}
+h1:hover {
+  transform: scale(1.1);
+  transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 .main1 {
   width: 100%;
@@ -21,7 +27,7 @@ h1 {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  border: 1px solid #746b49;
+  border: 1px solid #4f4831;
 }
 .main2 {
   width: 100%;
@@ -30,20 +36,27 @@ h1 {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  border: 1px solid #746b49;
+  border: 1px solid #413b29;
 }
 #inp {
+  transition: all 0.5s;
+  text-align: center;
+  outline: none;
   height: 23px;
   width: 200px;
   border-radius: 4px;
   text-decoration: none;
-  margin-right: 3px;
+  margin-right: 4px;
   margin-left: 10px;
   background-color: #746b4977;
   color: #b5a773;
   border: 1px solid rgb(193, 133, 23);
 }
+#inp:focus {
+  border: 1px solid rgb(244, 167, 51);
+}
 #btn {
+  transition: all 0.5s;
   height: 28px;
   width: 80px;
   border-radius: 5px;
@@ -51,6 +64,10 @@ h1 {
   border: 1px solid rgb(193, 133, 23);
   background-color: #746b4977;
   color: #c6b780;
+}
+#btn:hover {
+  border: 1px solid rgb(244, 167, 51);
+  transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 .main3 {
   width: 100%;
@@ -61,7 +78,9 @@ h1 {
   align-items: center;
 }
 #form h3 {
-  font-size: 25x;
+  font-size: 22px;
+  line-height: 1;
+  margin: 0;
 }
 .smain3 {
   display: flex;
@@ -75,7 +94,7 @@ h1 {
     margin-right: auto;
   }
   h1 {
-    font-weight: 500;
+    font-weight: 0;
     font-size: 40px;
     font-family: "Tilt Prism", cursive;
   }
@@ -87,7 +106,7 @@ h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 1px solid #746b49;
+    border: 1px solid #4f4831;
   }
   .main2 {
     width: 100%;
@@ -96,14 +115,14 @@ h1 {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    border: 1px solid #746b49;
+    border: 1px solid #4f4831;
   }
   #inp {
     height: 25px;
     width: 200px;
     border-radius: 4px;
     text-decoration: none;
-
+    text-align: center;
     background-color: #746b4977;
     color: #b5a773;
     border: 1px solid rgb(193, 133, 23);
@@ -117,6 +136,7 @@ h1 {
     background-color: #746b4977;
     color: #c6b780;
   }
+
   .main3 {
     width: 100%;
     height: 180px;
@@ -126,7 +146,7 @@ h1 {
     align-items: center;
   }
   #form h3 {
-    font-size: 22px;
+    font-size: 20px;
     line-height: 1;
     margin: 0;
   }
