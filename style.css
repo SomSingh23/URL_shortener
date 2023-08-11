@@ -1,158 +1,86 @@
 body {
   margin: 0;
-  background-color: #040404;
-  color: #cda4a4;
+  font-family: "Poppins", sans-serif;
+  background-color: #f9f9f9;
+  color: #333333;
 }
+
 .container {
   width: 80%;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
 }
 h1 {
-  color: rgb(202, 157, 22);
-  font-weight: 100;
-  font-size: 60px;
-  font-family: "Tilt Prism", cursive;
-  transition: all 2s;
+  color: #e67e22;
+  font-weight: 600;
+  font-size: 48px;
+  font-family: "Playfair Display", serif;
+  margin-bottom: 20px;
 }
-h1:hover {
-  transform: scale(1.1);
-  transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
-}
-.main1 {
-  width: 100%;
-  height: 100px;
-  margin-top: 80px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  border: 1px solid #4f4831;
-}
-.main2 {
-  width: 100%;
-  height: 100px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  border: 1px solid #413b29;
-}
-#inp {
-  transition: all 0.5s;
-  text-align: center;
-  outline: none;
-  height: 23px;
-  width: 200px;
-  border-radius: 4px;
-  text-decoration: none;
-  margin-right: 4px;
-  margin-left: 10px;
-  background-color: #746b4977;
-  color: #b5a773;
-  border: 1px solid rgb(193, 133, 23);
-}
-#inp:focus {
-  border: 1px solid rgb(244, 167, 51);
-}
-#btn {
-  transition: all 0.5s;
-  height: 28px;
-  width: 80px;
-  border-radius: 5px;
-  margin-left: 3px;
-  border: 1px solid rgb(193, 133, 23);
-  background-color: #746b4977;
-  color: #c6b780;
-}
-#btn:hover {
-  border: 1px solid rgb(244, 167, 51);
-  transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
-}
-.main3 {
-  width: 100%;
-  height: 180px;
+
+.form-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  padding: 40px;
+  background-color: #ffffff;
+  border: 1px solid #dcdcdc;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 50px;
 }
-#form h3 {
-  font-size: 22px;
-  line-height: 1;
-  margin: 0;
+
+#inp {
+  padding: 12px;
+  border: none;
+  background-color: #f2f2f2;
+  color: #333333;
+  border-radius: 6px;
+  width: 100%;
+  margin-bottom: 20px;
+  transition: background-color 0.3s;
+  outline: none;
+}
+
+#inp:focus {
+  background-color: #ffffff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#btn {
+  padding: 12px 24px;
+  border: none;
+  background-color: #e67e22;
+  color: #ffffff;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#btn:hover {
+  background-color: #d35400;
 }
 .smain3 {
-  display: flex;
-  flex-direction: column;
-  align-items: start;
+  color: #863500;
 }
+#form h3 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #e67e22;
+}
+
 @media (max-width: 650px) {
   .container {
-    width: 95%;
-    margin-left: auto;
-    margin-right: auto;
+    width: 90%;
   }
   h1 {
-    font-weight: 0;
-    font-size: 40px;
-    font-family: "Tilt Prism", cursive;
+    font-size: 36px;
   }
-  .main1 {
-    width: 100%;
-    height: 100px;
-    margin-top: 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid #4f4831;
-  }
-  .main2 {
-    width: 100%;
-    height: 200px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    border: 1px solid #4f4831;
+  .form-container {
+    padding: 30px;
+    margin-top: 30px;
   }
   #inp {
-    height: 25px;
-    width: 200px;
-    border-radius: 4px;
-    text-decoration: none;
-    text-align: center;
-    background-color: #746b4977;
-    color: #b5a773;
-    border: 1px solid rgb(193, 133, 23);
-  }
-  #btn {
-    height: 28px;
-    width: 80px;
-    border-radius: 5px;
-    margin-left: 3px;
-    border: 1px solid rgb(193, 133, 23);
-    background-color: #746b4977;
-    color: #c6b780;
-  }
-
-  .main3 {
-    width: 100%;
-    height: 180px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  #form h3 {
-    font-size: 20px;
-    line-height: 1;
-    margin: 0;
-  }
-  .smain3 {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
+    margin-bottom: 15px;
   }
 }
