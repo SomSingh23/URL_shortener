@@ -15,8 +15,12 @@ h1 {
   font-size: 48px;
   font-family: "Playfair Display", serif;
   margin-bottom: 20px;
+  transition: all 1.4s;
 }
-
+h1:hover {
+  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  transform: scale(1.04);
+}
 .form-container {
   display: flex;
   flex-direction: column;
