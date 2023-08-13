@@ -34,7 +34,7 @@ let call_api = async (token) => {
   } catch (err) {
     let _link1 = document.querySelector("#link1");
     _link1.textContent = "";
-    _link1.textContent = err;
+    _link1.textContent = "Request failed with status code 400";
   }
 };
 let form = document.querySelector("#btn");
