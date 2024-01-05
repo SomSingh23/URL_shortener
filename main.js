@@ -19,19 +19,51 @@ copyButtons.forEach((button) => {
   });
 });
 
+let delayFunc = (ms) => {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve("resolved");
+    }, ms);
+  });
+};
+
 let call_api = async (token) => {
+  let setIntId = setInterval(()=>{
+    let _link1 = document.querySelector("#link1");
+  _link1.textContent = "# #"
+  },500)
+  await delayFunc(100);
+  let setIntId2 = setInterval(()=>{
+    let _link1 = document.querySelector("#link1");
+  _link1.textContent = "# # # #"
+  },500)
+  await delayFunc(100);
+  let setIntId3 = setInterval(()=>{
+    let _link1 = document.querySelector("#link1");
+  _link1.textContent = "# # # # # #"
+  },500)
+  await delayFunc(100);
+  let setIntId4 = setInterval(()=>{
+    let _link1 = document.querySelector("#link1");
+  _link1.textContent = "# # # # # # # #"
+  },500) 
   try {
     let response = await axios.get(
       `https://som-745j.onrender.com?url=${token}`
     );
+   clearInterval(setIntId);
+   clearInterval(setIntId2);
+   clearInterval(setIntId3);
+   clearInterval(setIntId4);
     const link1 = response.data.shortUrl;
-
-    let main3 = document.querySelector(".main3");
     let _link1 = document.querySelector("#link1");
-    // main3.style.border = "1px solid #4f4831";
     _link1.textContent = "";
     _link1.textContent = `${link1}`;
   } catch (err) {
+    clearInterval(setIntId);
+    clearInterval(setIntId2);
+    clearInterval(setIntId3);
+    clearInterval(setIntId4);
     let _link1 = document.querySelector("#link1");
     _link1.textContent = "";
     _link1.textContent = "Request failed with status code 400";
