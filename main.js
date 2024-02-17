@@ -28,33 +28,31 @@ let delayFunc = (ms) => {
 };
 
 let call_api = async (token) => {
-  let setIntId = setInterval(()=>{
+  let setIntId = setInterval(() => {
     let _link1 = document.querySelector("#link1");
-  _link1.textContent = "# #"
-  },500)
+    _link1.textContent = "# #";
+  }, 500);
   await delayFunc(100);
-  let setIntId2 = setInterval(()=>{
+  let setIntId2 = setInterval(() => {
     let _link1 = document.querySelector("#link1");
-  _link1.textContent = "# # # #"
-  },500)
+    _link1.textContent = "# # # #";
+  }, 500);
   await delayFunc(100);
-  let setIntId3 = setInterval(()=>{
+  let setIntId3 = setInterval(() => {
     let _link1 = document.querySelector("#link1");
-  _link1.textContent = "# # # # # #"
-  },500)
+    _link1.textContent = "# # # # # #";
+  }, 500);
   await delayFunc(100);
-  let setIntId4 = setInterval(()=>{
+  let setIntId4 = setInterval(() => {
     let _link1 = document.querySelector("#link1");
-  _link1.textContent = "# # # # # # # #"
-  },500) 
+    _link1.textContent = "# # # # # # # #";
+  }, 500);
   try {
-    let response = await axios.get(
-      `https://som-745j.onrender.com?url=${token}`
-    );
-   clearInterval(setIntId);
-   clearInterval(setIntId2);
-   clearInterval(setIntId3);
-   clearInterval(setIntId4);
+    let response = await axios.get(`https://som-url.vercel.app/?url=${token}`);
+    clearInterval(setIntId);
+    clearInterval(setIntId2);
+    clearInterval(setIntId3);
+    clearInterval(setIntId4);
     const link1 = response.data.shortUrl;
     let _link1 = document.querySelector("#link1");
     _link1.textContent = "";
