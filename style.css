@@ -109,6 +109,7 @@ h1:hover {
   }
 }
 .copyright {
+  margin-top: 25px;
   font-style: italic; /* Makes the text italic for an incline */
   font-size: 12px;
   color: #999;
